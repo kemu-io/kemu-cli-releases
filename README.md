@@ -6,7 +6,17 @@ The Kemu CLI executes Kemu recipes efficiently, automatically managing service d
 
 ## Installation
 
-### Via npm (Recommended)
+### Quick Install (Recommended)
+
+Use the installation script for automatic setup:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kemu-io/kemu-cli-releases/main/install.sh | bash
+```
+
+This automatically downloads the correct binary for your platform and installs it to `/usr/local/bin`.
+
+### Via npm
 
 Install globally using npm:
 
@@ -16,27 +26,16 @@ npm install -g @kemu-io/kemu-cli
 
 After installation, the `kemu` binary will be available in your PATH.
 
-### Direct Binary Download
+### Other Installation Methods
 
-Download the appropriate binary for your platform from the [Releases](https://github.com/kemu-io/kemu-cli-releases/releases) page:
+For more installation options including:
+- Installing specific versions
+- Custom installation directories
+- Package manager installations (npm, yarn, pnpm, bun)
+- Manual installation
+- Troubleshooting
 
-- **Linux x64**: `kemu-linux-x64`
-- **Linux ARM64**: `kemu-linux-arm64`
-- **macOS x64**: `kemu-darwin-x64`
-- **macOS ARM64 (Apple Silicon)**: `kemu-darwin-arm64`
-- **Windows x64**: `kemu-windows-x64.exe`
-
-Make the binary executable (Unix-like systems):
-
-```bash
-chmod +x kemu-*
-```
-
-Move it to a directory in your PATH:
-
-```bash
-sudo mv kemu-* /usr/local/bin/kemu
-```
+See the complete [Installation Guide](INSTALLATION.md).
 
 ## Quick Start
 
